@@ -1,10 +1,21 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 6rem;
+  padding: 1rem;
   min-height: 100vh;
+  background-color: burlywood;
+}
+.titulo {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo h1 {
+  
+  font-size: 5rem;
+  
 }
 
 .description {
@@ -75,10 +86,11 @@
 
 .center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 2rem;
 }
 
 .center::before {
@@ -107,6 +119,8 @@
 
 .logo {
   position: relative;
+  width: auto;
+  height: auto;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -132,6 +146,9 @@
     padding: 4rem;
   }
 
+  .titulo h1 {
+    font-size: 3rem;
+  }
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
@@ -148,7 +165,7 @@
   }
 
   .center {
-    padding: 8rem 0 6rem;
+    padding: 6rem 0 6rem;
   }
 
   .center::before {
