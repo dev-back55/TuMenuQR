@@ -144,11 +144,6 @@
     padding: 6rem 0 6rem;
   }
 
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
   .description {
     font-size: 0.8rem;
   }
@@ -203,15 +198,6 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
 
 @keyframes rotate {
   from {
