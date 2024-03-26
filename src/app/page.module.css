@@ -10,6 +10,7 @@
 .titulo {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
 }
 
 .titulo h1 {
@@ -25,8 +26,32 @@
   font-size: 0.85rem;
   max-width: var(--max-width);
   width: 100%;
-  z-index: 2;
+  
   font-family: var(--font-mono);
+  background-color: cadetblue;
+}
+
+.description_top {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 0.85rem;
+  max-width: var(--max-width);
+  width: 100%;
+  
+  font-family: var(--font-mono);
+  
+}
+.description_top p {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+  position: fixed;
+  z-index: 2;
 }
 
 .description a {
@@ -90,7 +115,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 2rem;
+  margin-top: 2rem;
 }
 
 .logo {
@@ -119,7 +144,7 @@
 /* Mobile */
 @media (max-width: 700px) {
   .content {
-    padding: 4rem;
+    padding: 1rem;
   }
 
   .titulo h1 {
@@ -139,11 +164,11 @@
   .card h2 {
     margin-bottom: 0.5rem;
   }
-
+/*
   .center {
     padding: 6rem 0 6rem;
   }
-
+*/
   .description {
     font-size: 0.8rem;
   }
@@ -156,7 +181,7 @@
   .description div {
     display: flex;
     justify-content: center;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
   }
 
